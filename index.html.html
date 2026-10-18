@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jhony Silva | Portfólio</title>
+<style>
+:root{--bg:#0b0d12;--panel:#141925;--text:#f2f4f8;--muted:#a0a9ba;--line:#ffffff15;--purple:#8b7cff;--blue:#5fc9f8;--green:#77e0b5}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#5d4ecd28,transparent 38%),radial-gradient(ellipse at 0% 35%,#379fc714,transparent 32%),var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.container{width:min(1100px,calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:#0b0d12cc;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.03em;font-size:13px}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--purple),#5cafff)}.navlinks{display:flex;gap:24px;align-items:center;color:var(--muted);font-size:13px}.navlinks a:hover{color:white}.navcta{border:1px solid var(--line);padding:8px 13px;border-radius:10px;color:white!important}
+.hero{padding:88px 0 70px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:55px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border-radius:30px;border:1px solid #8b7cff40;background:#8b7cff13;color:#cbc5ff;font-size:12px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px #77e0b51c}h1{font-size:clamp(42px,6vw,70px);line-height:1.04;letter-spacing:-.065em;margin:22px 0 18px}.gradient{background:linear-gradient(105deg,#fff,#b9b1ff 55%,#7edbff);color:transparent;background-clip:text;-webkit-background-clip:text}.intro{max-width:620px;color:var(--muted);font-size:17px}.intro strong{color:#f0f1f7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;font-size:13px;font-weight:750;transition:.2s}.btn:hover{transform:translateY(-2px);border-color:#8b7cff88}.primary{background:linear-gradient(135deg,#8b7cff,#6679e9);border-color:transparent;box-shadow:0 12px 30px #695ee83b}.secondary{background:#ffffff08}.note{color:#7f899c;font-size:12px;margin-top:20px}
+.visual{min-height:350px;display:grid;place-items:center;position:relative}.orb{position:absolute;width:260px;height:260px;border-radius:50%;background:linear-gradient(145deg,#8b7cff45,#5fc9f80b)}.orbit{position:absolute;width:330px;height:330px;border:1px solid #aea6ff25;border-radius:50%;transform:scaleY(.72) rotate(-22deg)}.codecard{position:relative;width:min(100%,340px);padding:20px;border:1px solid #ffffff20;border-radius:18px;background:#121620ed;box-shadow:0 25px 80px #0005;transform:rotate(2deg)}.window{display:flex;gap:6px;border-bottom:1px solid var(--line);padding-bottom:17px}.window i{width:8px;height:8px;border-radius:50%;background:#4d5565}.window i:first-child{background:#ff817e}.window i:nth-child(2){background:#f4c96b}.window i:nth-child(3){background:#6dd9a5}.code-label{font:11px monospace;color:#7e8ba3;margin:16px 0 10px}.line{font:12px monospace;margin:7px 0;color:#d7d9e7}.purple{color:#b8aaff}.cyan{color:#7edbff}.green{color:#88e5bd}.orange{color:#ffc78a}.float{position:absolute;padding:9px 12px;background:#151b27;border:1px solid var(--line);border-radius:12px;color:#d9deeb;font-size:11px;box-shadow:0 12px 32px #0004}.f1{top:28px;right:-4px}.f2{bottom:35px;left:-4px}
+section{padding:62px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.kicker{color:var(--blue);font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:850}.sectionhead h2,h2{font-size:clamp(27px,4vw,38px);line-height:1.15;letter-spacing:-.045em;margin:7px 0 0}.desc{max-width:500px;color:var(--muted);font-size:14px;margin:0}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#171c28f2,#10131bf2);border-radius:20px;transition:.25s}.project:hover{transform:translateY(-4px);border-color:#8b7cff66}.projecttop{display:flex;justify-content:space-between;align-items:center}.picon{display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:#8b7cff20;color:#c2baff;font-size:20px}.ptype{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8e9aaf}.project h3{margin:19px 0 8px;font-size:19px;letter-spacing:-.025em}.project p{margin:0;color:var(--muted);font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tags span{font-size:10px;padding:5px 8px;border:1px solid var(--line);color:#c2c9d7;border-radius:7px;background:#ffffff06}.plink{display:inline-flex;gap:7px;margin-top:19px;font-size:12px;font-weight:750;color:#bdb5ff}.casebtn{display:inline-flex;margin-top:14px;margin-right:8px;padding:8px 11px;border:1px solid #8b7cff55;border-radius:9px;background:#8b7cff12;color:#d4ceff;font-size:11px;font-weight:750;cursor:pointer}.casebtn:hover{background:#8b7cff25}.androidbox{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;padding:28px;border:1px solid #5fc9f833;border-radius:22px;background:linear-gradient(135deg,#5fc9f810,#8b7cff10)}.androidbox p{color:var(--muted);font-size:14px}.androidfeatures{display:grid;grid-template-columns:1fr 1fr;gap:10px}.androidfeatures div{padding:13px;border:1px solid var(--line);border-radius:12px;background:#ffffff06;font-size:12px;color:#d8deeb}.modal{display:none;position:fixed;inset:0;z-index:30;background:#05070bd9;padding:20px;overflow:auto;align-items:center;justify-content:center}.modal.open{display:flex}.modalbox{width:min(680px,100%);padding:28px;border:1px solid #ffffff20;border-radius:20px;background:#141925;box-shadow:0 25px 90px #0009}.modalbox h2{margin:8px 0 14px}.modalbox p,.modalbox li{color:var(--muted);font-size:14px}.modalclose{float:right;border:1px solid var(--line);background:#ffffff0b;color:white;border-radius:9px;padding:7px 10px;cursor:pointer}.modalbox .tags{margin-bottom:16px}
+.aboutgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}.aboutpanel{padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#8b7cff14,#ffffff05)}.quote{font-size:25px;line-height:1.3;letter-spacing:-.04em;font-weight:700}.aboutpanel p,.aboutcontent p{color:var(--muted);font-size:13px}.aboutcontent p{font-size:14px}.timeline{display:grid;gap:13px;margin-top:22px}.item{display:grid;grid-template-columns:14px 1fr;gap:12px}.tdot{width:9px;height:9px;border-radius:50%;background:var(--purple);margin-top:7px;box-shadow:0 0 0 5px #8b7cff1a}.item strong{display:block;font-size:13px}.item span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:16px;border:1px solid var(--line);border-radius:14px;background:#ffffff06}.skill strong{display:block;font-size:13px;margin-bottom:5px}.skill span{font-size:11px;color:var(--muted)}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:32px;border:1px solid #8b7cff40;border-radius:24px;background:radial-gradient(ellipse at 100% 0%,#8b7cff24,transparent 45%),var(--panel)}.contact p{color:var(--muted);font-size:14px;max-width:500px;margin-bottom:0}footer{border-top:1px solid var(--line);padding:24px 0;color:#737e91;font-size:11px}.footer{display:flex;justify-content:space-between;gap:16px}.reveal{opacity:0;transform:translateY(15px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:800px){.androidbox{grid-template-columns:1fr}.hero{padding:60px 0 45px}.hero-grid{grid-template-columns:1fr;gap:22px}.visual{min-height:300px}.aboutgrid{grid-template-columns:1fr;gap:20px}.skills{grid-template-columns:repeat(2,1fr)}.navlinks{gap:12px}.navlinks a:not(.navcta){display:none}}
+@media(max-width:560px){.container{width:calc(100% - 28px)}.hero{padding-top:48px}h1{font-size:43px}.intro{font-size:15px}.visual{min-height:270px}.orb{width:210px;height:210px}.orbit{width:270px;height:270px}.codecard{width:290px;padding:16px}.f1{top:5px;right:0}.f2{bottom:8px;left:0}section{padding:46px 0}.sectionhead{display:block}.desc{margin-top:12px}.projects{grid-template-columns:1fr}.contact{display:block;padding:23px}.contact .btn{margin-top:20px}.footer{display:block}.footer span{display:block;margin-top:7px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="#inicio"><span class="mark">JS</span><span>JHONY SILVA <span style="color:#8b7cff">/</span> PORTFÓLIO</span></a>
+<nav class="navlinks"><a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#habilidades">Habilidades</a><a href="#mobile">Mobile</a><a class="navcta" href="#contato">Vamos conversar ↗</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid"><div>
+<div class="eyebrow"><span class="dot"></span> Tecnologia • Dados • Inovação</div>
+<h1>Transformando<br><span class="gradient">processos em soluções.</span></h1>
+<p class="intro">Olá, sou <strong>Jhony Silva</strong>. Trabalho conectando tecnologia, automação e análise de dados para resolver problemas reais, simplificar rotinas e melhorar processos.</p>
+<div class="actions">
+<a class="btn primary" href="curriculo-jhony-silva.pdf" download>↓ Baixar currículo PDF</a><a class="btn primary" href="#projetos">Explorar projetos ↘</a><a class="btn secondary" href="https://www.linkedin.com/in/jhony-oliveira-499532288/" target="_blank" rel="noreferrer">Meu LinkedIn ↗</a><a class="btn secondary" href="https://github.com/JhonDevPro" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+<p class="note">Da operação à tecnologia: experiência prática, curiosidade e foco em resultado.</p>
+</div><div class="visual" aria-label="Ilustração decorativa de código"><div class="orb"></div><div class="orbit"></div><div class="codecard">
+<div class="window"><i></i><i></i><i></i></div><div class="code-label">// mindset.js</div>
+<div class="line"><span class="purple">const</span> objetivo = <span class="green">"resolver"</span>;</div><div class="line"><span class="purple">const</span> processo = <span class="cyan">analisar</span>();</div>
+<div class="line"><span class="purple">function</span> <span class="cyan">melhorar</span>(ideia) {</div><div class="line">&nbsp;&nbsp;<span class="purple">return</span> ideia + <span class="orange">" impacto"</span>;</div><div class="line">}</div><div class="code-label">// status</div><div class="line"><span class="green">●</span> Sempre aprendendo, sempre construindo.</div>
+</div><div class="float f1">✦ Automação inteligente</div><div class="float f2">↗ Ideias que viram soluções</div></div></div></section>
+<section id="projetos"><div class="container"><div class="sectionhead reveal"><div><div class="kicker">Projetos reais</div><h2>Ideias transformadas em produtos</h2></div><p class="desc">Aplicações web, ferramentas para o dia a dia e aplicativos Android funcionais, desenvolvidos a partir de problemas reais.</p></div>
+<div class="projects">
+<article class="project reveal"><div class="projecttop"><div class="picon">⚽</div><span class="ptype">Aplicação web · IA/dados</span></div><h3>Manto Rubro-Negro</h3><p>Aplicativo de conteúdo do Flamengo com próxima partida, escalações, resultados, campeonatos, elenco e galeria de fotos moderada.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Capacitor</span></div><a class="plink" href="https://manto-rubro-negro.lovable.app" target="_blank" rel="noopener">Abrir demonstração ↗</a><br><a class="plink" href="https://github.com/JhonDevPro/scout-ai-pro-60" target="_blank" rel="noopener">Ver repositório ↗</a><br><button class="casebtn" data-case="manto">Ver estudo do projeto +</button></article>
+<article class="project reveal"><div class="projecttop"><div class="picon">✎</div><span class="ptype">Produtividade</span></div><h3>Speedy Scribe Sync</h3><p>Aplicação de notas digitais com foco em melhorar a experiência de edição de texto e a organização das anotações.</p><div class="tags"><span>React</span><span>UI/UX</span><span>Aplicação web</span></div><a class="plink" href="https://speedy-scribe-sync.lovable.app" target="_blank" rel="noopener">Abrir demonstração ↗</a><br><a class="plink" href="https://github.com/JhonDevPro/speedy-scribe-sync" target="_blank" rel="noopener">Ver repositório ↗</a><br><button class="casebtn" data-case="scribe">Ver estudo do projeto +</button></article>
+<article class="project reveal"><div class="projecttop"><div class="picon">▤</div><span class="ptype">Carreira · Ferramenta web</span></div><h3>Build My CV Lab</h3><p>Projeto voltado à criação e evolução de uma ferramenta web para apoiar a construção de currículos.</p><div class="tags"><span>Aplicação web</span><span>UX/UI</span><span>Produto digital</span></div><a class="plink" href="https://build-my-cv-lab.lovable.app" target="_blank" rel="noopener">Abrir demonstração ↗</a><br><a class="plink" href="https://github.com/JhonDevPro/build-my-cv-lab" target="_blank" rel="noopener">Ver repositório ↗</a><br><button class="casebtn" data-case="cv">Ver estudo do projeto +</button></article>
+<article class="project reveal"><div class="projecttop"><div class="picon">◉</div><span class="ptype">Comunicação · WebRTC</span></div><h3>Connect Hub</h3><p>Conceito de plataforma de comunicação para equipes, com salas, chat, membros online e videochamadas ponto a ponto usando WebRTC.</p><div class="tags"><span>WebRTC</span><span>PeerJS</span><span>Supabase</span><span>Tempo real</span></div><a class="plink" href="https://nexo-hub-p2p.lovable.app" target="_blank" rel="noopener">Abrir demonstração ↗</a><br><a class="plink" href="https://github.com/JhonDevPro/connect-hub" target="_blank" rel="noopener">Ver repositório ↗</a><br><button class="casebtn" data-case="connect">Ver estudo do projeto +</button></article>
+</div></div></section>
+<section id="mobile"><div class="container"><div class="sectionhead reveal"><div><div class="kicker">Além do navegador</div><h2>Aplicações web e mobile</h2></div><p class="desc">Também trabalho com geração de APKs funcionais usando fluxos de build pelo GitHub.</p></div><div class="androidbox reveal"><div><div class="kicker">Android · Build e entrega</div><h2>Da aplicação ao dispositivo.</h2><p>Exploro caminhos para levar projetos web a dispositivos móveis, gerar pacotes APK e organizar o processo de build. Os links de download serão adicionados aqui quando houver versões públicas prontas para compartilhar.</p><a class="btn secondary" href="https://github.com/JhonDevPro" target="_blank" rel="noreferrer">Ver projetos no GitHub ↗</a></div><div class="androidfeatures"><div>▣ Aplicações Android</div><div>⌘ Builds via GitHub</div><div>↗ Publicação e distribuição</div><div>⚙️ Testes e evolução</div></div></div></div></section>
+<section id="sobre"><div class="container aboutgrid"><div class="aboutpanel reveal"><div class="kicker">Minha trajetória</div><p class="quote">“A melhor solução começa quando a gente entende o problema de verdade.”</p><p>Gosto de encontrar oportunidades de melhoria e transformar ideias em ferramentas úteis para o dia a dia.</p></div><div class="aboutcontent reveal"><div class="kicker">Sobre mim</div><h2>Experiência prática.<br>Olhar voltado ao futuro.</h2><p>Minha trajetória começou próxima da operação logística, onde aprendi como os processos acontecem na prática e quais desafios as equipes enfrentam. Hoje, levo essa visão para a tecnologia, buscando soluções que economizem tempo, organizem informações e gerem impacto.</p><p>Tenho interesse em desenvolvimento de aplicações web e Android, automação de processos, inteligência artificial e análise de dados. Também crio e gero APKs funcionais por meio de fluxos de build no GitHub, levando projetos além do navegador para dispositivos móveis. Acredito na aprendizagem contínua e em usar a tecnologia com propósito.</p><div class="timeline">
+<div class="item"><span class="tdot"></span><div><strong>Tecnologia e inovação</strong><span>Desenvolvimento de soluções, melhorias de sistemas e automações.</span></div></div>
+<div class="item"><span class="tdot"></span><div><strong>Visão operacional</strong><span>Experiência com processos logísticos e necessidades reais da operação.</span></div></div>
+<div class="item"><span class="tdot"></span><div><strong>Formação contínua</strong><span>Análise e Desenvolvimento de Sistemas · Pós-graduação em Ciência de Dados e Inteligência Artificial em andamento.</span></div></div>
+</div></div></div></section>
+<section id="habilidades"><div class="container"><div class="sectionhead reveal"><div><div class="kicker">Caixa de ferramentas</div><h2>Áreas de atuação</h2></div><p class="desc">Desenvolvimento de soluções web e mobile, automação e tecnologia aplicada a processos reais.</p></div><div class="skills reveal">
+<div class="skill"><strong>Desenvolvimento web</strong><span>HTML · CSS · JavaScript · interfaces responsivas</span></div><div class="skill"><strong>Automação</strong><span>Otimização de tarefas e fluxos</span></div><div class="skill"><strong>Dados e indicadores</strong><span>Dashboards · KPIs · análise</span></div><div class="skill"><strong>Inteligência artificial</strong><span>Exploração prática de soluções com IA</span></div><div class="skill"><strong>Aplicações Android</strong><span>Criação e geração de APKs funcionais via GitHub</span></div><div class="skill"><strong>Aplicações offline</strong><span>PWA · cache · sincronização</span></div><div class="skill"><strong>Melhoria de processos</strong><span>Mapeamento e simplificação</span></div><div class="skill"><strong>Sistemas</strong><span>Funcionalidades e requisitos</span></div><div class="skill"><strong>Aprendizado contínuo</strong><span>Experimentação e evolução</span></div>
+</div></div></section>
+
+<section id="formacao">
+  <div class="container">
+    <div class="sectionhead">
+      <div>
+        <div class="kicker">Formação profissional</div>
+        <h2>Conhecimento em evolução contínua.</h2>
+      </div>
+      <p class="desc">Formação em tecnologia, dados e experiência do usuário, conectada à aplicação prática em projetos.</p>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <div class="projecttop"><div class="picon">🎓</div><span class="ptype">Graduação</span></div>
+        <h3>Análise e Desenvolvimento de Sistemas</h3>
+        <p>Anhanguera Educacional · 2022–2025</p>
+        <div class="tags"><span>Desenvolvimento</span><span>Sistemas</span></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">📊</div><span class="ptype">Pós-graduação</span></div>
+        <h3>Análise de Dados</h3>
+        <p>Universidade Pitágoras Unopar Anhanguera · 360 horas · concluída em 2026</p>
+        <div class="tags"><span>Dados</span><span>Análise</span></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">✦</div><span class="ptype">Pós-graduação</span></div>
+        <h3>Design de Produtos Digitais (UX/UI)</h3>
+        <p>Universidade Pitágoras Unopar Anhanguera · 400 horas · concluída em 2025</p>
+        <div class="tags"><span>UX/UI</span><span>Produto digital</span></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">🤖</div><span class="ptype">Em andamento</span></div>
+        <h3>Ciência de Dados e Inteligência Artificial</h3>
+        <p>Pós-graduação iniciada em 2026.</p>
+        <div class="tags"><span>Ciência de Dados</span><span>IA</span></div>
+      </article>
+    </div>
+    <div class="sectionhead" style="margin-top:42px">
+      <div><div class="kicker">Documentos e certificados</div><h2>Formação comprovada.</h2></div>
+      <p class="desc">Visualize ou baixe os documentos acadêmicos e certificados de cursos.</p>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <div class="projecttop"><div class="picon">🎓</div><span class="ptype">Diploma</span></div>
+        <h3>Análise e Desenvolvimento de Sistemas</h3>
+        <p>Universidade Pitágoras Unopar Anhanguera · graduação concluída em 2024.</p>
+        <div class="actions"><a class="btn primary" href="diploma-analise-desenvolvimento-sistemas.pdf" target="_blank" rel="noopener noreferrer" title="Visualizar diploma em nova aba">Visualizar PDF ↗</a><a class="btn secondary" href="diploma-analise-desenvolvimento-sistemas.pdf" download>Baixar</a></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">📊</div><span class="ptype">Pós-graduação</span></div>
+        <h3>Análise de Dados · 360h</h3>
+        <p>Universidade Pitágoras Unopar Anhanguera · concluída em junho de 2026.</p>
+        <div class="actions"><a class="btn primary" href="pos-analise-dados.pdf" target="_blank" rel="noopener noreferrer" title="Visualizar certificado em nova aba">Visualizar PDF ↗</a><a class="btn secondary" href="pos-analise-dados.pdf" download>Baixar</a></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">✦</div><span class="ptype">Pós-graduação</span></div>
+        <h3>Design de Produtos Digitais (UX/UI) · 400h</h3>
+        <p>Universidade Pitágoras Unopar Anhanguera · concluída em novembro de 2025.</p>
+        <div class="actions"><a class="btn primary" href="pos-ux-ui.pdf" target="_blank" rel="noopener noreferrer" title="Visualizar certificado em nova aba">Visualizar PDF ↗</a><a class="btn secondary" href="pos-ux-ui.pdf" download>Baixar</a></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">🧠</div><span class="ptype">Curso · 40h</span></div>
+        <h3>Algoritmo</h3>
+        <p>Curso em Vídeo · novembro de 2023.</p>
+        <div class="actions"><a class="btn primary" href="certificado-algoritmo-40h.pdf" target="_blank" rel="noopener noreferrer" title="Visualizar certificado em nova aba">Visualizar PDF ↗</a><a class="btn secondary" href="certificado-algoritmo-40h.pdf" download>Baixar</a></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">🌐</div><span class="ptype">Curso · 20h</span></div>
+        <h3>Redes de Computadores</h3>
+        <p>Curso em Vídeo · novembro de 2023.</p>
+        <div class="actions"><a class="btn primary" href="certificado-redes-computadores-20h.pdf" target="_blank" rel="noopener noreferrer" title="Visualizar certificado em nova aba">Visualizar PDF ↗</a><a class="btn secondary" href="certificado-redes-computadores-20h.pdf" download>Baixar</a></div>
+      </article>
+      <article class="project">
+        <div class="projecttop"><div class="picon">🚀</div><span class="ptype">Bootcamp · 1h</span></div>
+        <h3>Educação Gratuita e Empregabilidade Juntas!</h3>
+        <p>DIO · outubro de 2023.</p>
+        <div class="actions"><a class="btn primary" href="certificado-bootcamp-dio.pdf" target="_blank" rel="noopener noreferrer" title="Visualizar certificado em nova aba">Visualizar PDF ↗</a><a class="btn secondary" href="certificado-bootcamp-dio.pdf" download>Baixar</a></div>
+      </article>
+    </div>
+    <p class="note">Por segurança, os PDFs públicos de diploma e pós-graduações foram preparados com ocultação de identificadores pessoais (CPF/RG e data de nascimento, quando presentes). Guarde os originais sem alterações para uso oficial.</p>
+  </div>
+</section>
+
+<section id="contato"><div class="container"><div class="contact reveal"><div><div class="kicker">Vamos nos conectar</div><h2>Tem um desafio interessante?</h2><p>Estou aberto a trocar ideias sobre tecnologia, automação, dados e soluções que tornam o trabalho mais simples e eficiente.</p></div><a class="btn primary" href="https://www.linkedin.com/in/jhony-oliveira-499532288/" target="_blank" rel="noreferrer">Fale comigo no LinkedIn ↗</a></div></div></section>
+</main><div class="modal" id="caseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalbox"><button class="modalclose" id="modalClose" aria-label="Fechar">Fechar ✕</button><div class="kicker">Estudo de projeto</div><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+<footer><div class="container footer"><span>© <span id="year"></span> Jhony Silva. Feito com propósito e curiosidade.</span><span>HTML · CSS · JavaScript</span></div></footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+const cases={
+manto:{title:"Manto Rubro-Negro",body:"<p><strong>Objetivo:</strong> reunir em um só lugar informações e conteúdo para torcedores do Flamengo.</p><p><strong>Funcionalidades descritas no projeto:</strong></p><ul><li>Próxima partida, escalações, banco e desfalques.</li><li>Resultados recentes e dados de partidas.</li><li>Elenco, campeonatos e galeria de fotos com moderação.</li><li>Painel para atualização das informações.</li></ul><p><strong>Tecnologias:</strong> React, TypeScript, Supabase, TanStack e Capacitor.</p><p>O aplicativo publicado pode ser testado pelo link de demonstração no card.</p>"},
+scribe:{title:"Speedy Scribe Sync",body:"<p><strong>Objetivo:</strong> evoluir uma ferramenta de anotações digitais com foco em usabilidade e edição de texto.</p><p><strong>Foco do trabalho:</strong> repensar a interface, melhorar a experiência do editor e organizar melhor a interação com as notas.</p><p><strong>Formato:</strong> aplicação web. Consulte a demonstração e o repositório para ver o estado atual do projeto.</p>"},
+cv:{title:"Build My CV Lab",body:"<p><strong>Objetivo:</strong> criar uma ferramenta web voltada à construção de currículos.</p><p><strong>Foco do projeto:</strong> experiência de uso e evolução de um produto digital para apoiar a apresentação profissional.</p><p>Consulte a demonstração para avaliar as funcionalidades disponíveis atualmente.</p>"},
+connect:{title:"Connect Hub / Nexo Hub P2P",body:"<p><strong>Objetivo:</strong> explorar uma plataforma de comunicação para equipes.</p><p><strong>Funcionalidades planejadas no projeto:</strong></p><ul><li>Salas, chat de texto e lista de membros.</li><li>Videochamadas ponto a ponto com WebRTC/PeerJS.</li><li>Controles de microfone, câmera e volume.</li><li>Compartilhamento de arquivos.</li></ul><p><strong>Tecnologias propostas:</strong> WebRTC, PeerJS e Supabase. Consulte a demonstração para confirmar as funcionalidades disponíveis na versão publicada.</p>"}};
+const modalEl=document.getElementById("caseModal");document.querySelectorAll("[data-case]").forEach(btn=>btn.addEventListener("click",()=>{const c=cases[btn.dataset.case];if(!c)return;document.getElementById("modalTitle").textContent=c.title;document.getElementById("modalBody").innerHTML=c.body;modalEl.classList.add("open");document.body.style.overflow="hidden"}));function closeModal(){modalEl.classList.remove("open");document.body.style.overflow=""}document.getElementById("modalClose").addEventListener("click",closeModal);modalEl.addEventListener("click",e=>{if(e.target===modalEl)closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+</script>
+</body></html>
